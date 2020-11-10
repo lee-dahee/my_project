@@ -1,0 +1,78 @@
+
+#menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+#menu .main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#menu .card {
+    width: 30%;
+    height: 400px;
+    margin: calc(10% / 6);
+    align-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -80px;
+    position: relative;
+    background-color: white;
+}
+
+
+#menu .img_bulnabang {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    float: inside;
+}
+
+#menu .logo_naver, .logo_instagram {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    bottom: -7px;
+
+}
+
+#menu .font_01_bulnabang {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e46269;
+}
+
+#menu .font_02_bulnabang {
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+}
+
+#menu .font_03_bulnabang {
+    font-size: 12px;
+    font-weight: unset;
+    line-height: 1.5px;
+    color: grey;
+}
+
+
+.logo {
+    height: 90px;
+    width: 90px;
+    padding: 10px;
+    margin-left: 4px;
+    margin-bottom: -9.85px;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}

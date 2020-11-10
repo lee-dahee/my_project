@@ -1,0 +1,44 @@
+.sidebar {
+    height: 100%;
+    width: 117px;
+    background-color: #fad2c2;
+    font-size: smaller;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: grey;
+    font-weight: bolder;
+}
+
+.sidebar a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li {
+    color: grey;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+
+
+/*.sidebar {*/
+/*    height: auto;*/
+/*    width: 117px;*/
+/*    background-color: #fad2c2;*/
+/*    font-size: smaller;*/
+/*    color: grey;*/
+/*}*/
+
+/*a {*/
+/*    text-decoration: none;*/
+/*    color: grey;*/
+/*    font-weight: bolder;*/
+/*}*/
+
+/*a:hover {*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*}*/

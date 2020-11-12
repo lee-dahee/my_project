@@ -1,0 +1,88 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        :root {
+            --sidebar-width: 200px;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .wrap {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            height: 100%;
+            background-color: peachpuff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: -1;
+        }
+
+        .sidebar div {
+            margin-top: 32px;
+        }
+
+        .container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            padding: 16px;
+            background-color: white;
+            transition: all 35s;
+        }
+
+        .move-right {
+            width: calc(100% - var(--sidebar-width));
+            transform: translateX(var(--sidebar-width));
+        }
+
+        .container > .menu-btn {
+            width: 36px;
+            height: 36px;
+            margin: 16px;
+        }
+    </style>
+
+    <script>
+        function toggleMenu() {
+            const container = document.querySelector('.container')
+            container.classList.toggle('move-right')
+        }
+    </script>
+</head>
+<body>
+
+<div class="wrap">
+    <div class="sidebar">
+        <div>과자</div>
+        <div>아이스크림</div>
+        <div>케익</div>
+        <div>디저트</div>
+    </div>
+    <div class="container">
+        <img class="menu-btn" onclick="toggleMenu()"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+             alt="menu button">
+
+        <div>hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world </div>
+    </div>
+</div>
+
+</body>
+</html>

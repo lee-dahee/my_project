@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $(this).toggleClass('on');
+            });
+        });
+    </script>
+
+    <style>
+        body {
+            background-color: #e6b9f0;
+        }
+
+        .total {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 200px;
+            height: 200px;
+            transform: translate(-50%, -50%);
+            text-decoration: none;
+        }
+
+        .total span {
+            display: block;
+            position: absolute;
+
+            top: 50px;
+            width: 100px;
+            height: 30px;
+            background: rgba(225, 245, 136, 1);
+            color: transparent;
+            transform: translate(0, -50%);
+            transition: all 0.5s;
+        }
+
+        .total spen:before,
+        .total span:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 30px;
+            background: rgba(225, 245, 136, 1);
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#a" class="total">
+    <span>메뉴</span>
+</a>
+
+</body>
+</html>

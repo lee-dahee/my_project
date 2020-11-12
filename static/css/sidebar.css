@@ -3,14 +3,26 @@
     width: 117px;
     background-color: #fad2c2;
     font-size: smaller;
+    transition: all 0.5s ease-in-out;
 }
+
+.sidebar .pngwing {
+   transition: all 0.5s ease-in-out;
+}
+
+.sidebar .pngwing.move-right{
+    transform: translateX(117px);
+}
+
 
 .sidebar a {
     text-decoration: none;
     color: grey;
     font-weight: bolder;
 }
-
+.sidebar.move-left{
+    transform: translateX(-117px);
+}
 .sidebar a:hover {
     text-decoration: none;
     color: white;
@@ -21,7 +33,6 @@
     margin-bottom: 15px;
     list-style: none;
 }
-
 
 
 /*.sidebar {*/
